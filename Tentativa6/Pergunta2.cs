@@ -16,5 +16,10 @@ namespace Tentativa6
         {
             InitializeComponent();
         }
+
+        private void Pergunta2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,13 +41,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(40, 45);
+            this.label1.Location = new System.Drawing.Point(1, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(731, 39);
+            this.label1.Size = new System.Drawing.Size(770, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Em qual Data se comemora o dia dos Pais?";
+            this.label1.Text = "Em qual Data se comemorou o dia dos Pais em 2023?";
             // 
             // label2
             // 
@@ -100,6 +100,7 @@
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(83, 381);
+            this.maskedTextBox1.Mask = "aa";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(262, 20);
             this.maskedTextBox1.TabIndex = 5;

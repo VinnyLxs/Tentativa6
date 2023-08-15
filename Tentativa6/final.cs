@@ -7,48 +7,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Tentativa6
 {
-    public partial class Inicio : Form
+    public partial class final : Form
     {
-        DAO conectar;
+        DAO entrar;
 
-        public Inicio()
-        { 
 
+        public final()
+        {
             InitializeComponent();
-            conectar = new DAO();//Ligando o formulário ao Conector do banco
-     
+            entrar = new DAO();
+
         }
 
-        private void Inicio_Load(object sender, EventArgs e)
+        private void final_Load(object sender, EventArgs e)
         {
-           
+            acertos.Text = Variaveis.acertos.ToString();
+            erros.Text = Variaveis.erros.ToString();
+
+        }
+
+        private void acertos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erros_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                string result = conectar.inserir(nome.Text,"Jogadores");
+                string result = entrar.Pontuacao (acertos.Text, erros.Text, "Pontuacao");
                 MessageBox.Show(result);
             }
             catch (Exception erro)
             {
                 MessageBox.Show("Algo deu errado!\n\n" + erro.Message);
-            }//Fim do try catch
+            }
 
-            Pergunta1 p1= new Pergunta1();
-            p1.ShowDialog();
-            this.Close();
-
-        }//inserir
-
-        private void nome_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
+           this.Close();    
         }
     }
 }

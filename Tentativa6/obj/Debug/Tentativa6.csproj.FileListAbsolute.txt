@@ -46,3 +46,4 @@ C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.pergunta3.resources
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.pergunta4.resources
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.csproj.CopyComplete
+C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.final.resources

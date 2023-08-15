@@ -16,5 +16,42 @@ namespace Tentativa6
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Variaveis.acertos += 1;
+            pergunta4 p4 = new pergunta4();
+            p4.ShowDialog();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Variaveis.erros += 1;
+            pergunta4 p4 = new pergunta4();
+            p4.ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Variaveis.erros += 1;
+            pergunta4 p4 = new pergunta4();
+            p4.ShowDialog();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Variaveis.erros += 1;
+            pergunta4 p4 = new pergunta4();
+            p4.ShowDialog();
+            this.Close();
+        }
+
+        private void pergunta3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

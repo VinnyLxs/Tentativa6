@@ -10,6 +10,7 @@ using MySql.Data.MySqlClient;
 
 using System.Windows.Forms;
 using System.Windows.Markup;
+using System.Web;
 
 namespace Tentativa6
     {
@@ -20,7 +21,7 @@ namespace Tentativa6
         
             public DAO()
             {
-            conexao = new MySqlConnection("server=localhost;DataBase=JogoDeAdivinhacao;Uid=root;password=");
+                conexao = new MySqlConnection("server=localhost;DataBase=JogoDeAdivinhacao;Uid=root;password=");
                 try
                 {
                     conexao.Open();
@@ -32,11 +33,17 @@ namespace Tentativa6
 
             public string inserir (string nome, string nomeTabela)
             {
-            string inserir = $"Insert into{nomeTabela}(nome) values('{nome}')";
-            MySqlCommand sql = new MySqlCommand(inserir, conexao);
-            string resultado = sql.ExecuteNonQuery() + " Executado!";
-            return resultado;
+                string inserir = $"Insert into {nomeTabela}(nome) values('{nome}')";
+                MySqlCommand sql = new MySqlCommand(inserir, conexao);
+                string resultado = sql.ExecuteNonQuery() + " Executado!";
+                return resultado;
             }
-        
+            public string Pontuacao (string acertos,string Erros , string nomeTabela)
+            {
+                string inserir = $"Insert into {nomeTabela}(acertos, Erros) values('{acertos}','{Erros}')";
+                MySqlCommand sql = new MySqlCommand (inserir, conexao);
+                string resultado = sql.ExecuteNonQuery() + " Executado!";
+                return resultado;
+            }
         }
 }

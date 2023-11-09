@@ -20,33 +20,37 @@ namespace Tentativa6
         private void button5_Click(object sender, EventArgs e)
         {
             Variaveis.acertos += 1;
+            this.Hide();
             final fn = new final();
-            fn.ShowDialog();
-            this.Close();
+            fn.FormClosed += (s, args) => this.Close();
+            fn.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Variaveis.erros += 1;
+            this.Hide();
             final fn = new final();
-            fn.ShowDialog();
-            this.Close();
+            fn.FormClosed += (s, args) => this.Close();
+            fn.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Variaveis.erros += 1;
+            this.Hide();
             final fn = new final();
-            fn.ShowDialog();
-            this.Close();
+            fn.FormClosed += (s, args) => this.Close();
+            fn.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Variaveis.erros += 1;
+            this.Hide();
             final fn = new final();
-            fn.ShowDialog();
-            this.Close();
+            fn.FormClosed += (s, args) => this.Close();
+            fn.Show();
         }
 
         private void pergunta4_Load(object sender, EventArgs e)

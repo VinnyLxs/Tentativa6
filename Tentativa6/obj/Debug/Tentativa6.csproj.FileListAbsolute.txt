@@ -2,7 +2,6 @@ C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\bin\Debug\Tentativa
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\bin\Debug\Tentativa6.exe
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\bin\Debug\Tentativa6.pdb
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.csproj.AssemblyReference.cache
-C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.csproj.SuggestedBindingRedirects.cache
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.Form1.resources
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.Properties.Resources.resources
 C:\Users\vinicius.ocosta3\source\repos\Tentativa6\Tentativa6\obj\Debug\Tentativa6.csproj.GenerateResource.cache

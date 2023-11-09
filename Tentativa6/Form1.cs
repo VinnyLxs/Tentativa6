@@ -13,12 +13,11 @@ namespace Tentativa6
 {
     public partial class Form1 : Form
     {
-        Inicio ini;
+  
         DAO conectar;
         public Form1()
         {
             InitializeComponent();
-            ini= new Inicio();
             conectar= new DAO();
         }
 
@@ -27,9 +26,13 @@ namespace Tentativa6
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-            ini.ShowDialog();
+            this.Hide();
+            Inicio ini= new Inicio();
+            ini.FormClosed += (s, args) => this.Close();
+            ini.Show();
+            
         }
     }
 }

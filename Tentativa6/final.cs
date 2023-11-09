@@ -22,10 +22,11 @@ namespace Tentativa6
 
         }
 
-        private void final_Load(object sender, EventArgs e)
+        public void final_Load(object sender, EventArgs e)
         {
-            acertos.Text = Variaveis.acertos.ToString();
-            erros.Text = Variaveis.erros.ToString();
+            lbl_acertos.Text = Variaveis.acertos.ToString();
+            lbl_erros.Text = Variaveis.erros.ToString();
+            
 
         }
 
@@ -41,17 +42,19 @@ namespace Tentativa6
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             try
             {
-                string result = entrar.Pontuacao (acertos.Text, erros.Text, "Pontuacao");
+                string result = entrar.Pontuacao (lbl_acertos.Text, lbl_erros.Text, "Pontuacao");
                 MessageBox.Show(result);
+                
             }
             catch (Exception erro)
             {
                 MessageBox.Show("Algo deu errado!\n\n" + erro.Message);
             }
 
-           this.Close();    
+            this.Close();
         }
     }
 }

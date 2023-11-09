@@ -40,9 +40,10 @@ namespace Tentativa6
                 MessageBox.Show("Algo deu errado!\n\n" + erro.Message);
             }//Fim do try catch
 
-            Pergunta1 p1= new Pergunta1();
-            p1.ShowDialog();
-            this.Close();
+            this.Hide();
+            Pergunta1 p1 = new Pergunta1();
+            p1.FormClosed += (s, args) => this.Close();
+            p1.Show();
 
         }//inserir
 

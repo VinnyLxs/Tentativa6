@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.acertos = new System.Windows.Forms.TextBox();
-            this.erros = new System.Windows.Forms.TextBox();
+            this.lbl_acertos = new System.Windows.Forms.Label();
+            this.lbl_erros = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -69,11 +69,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 42);
+            this.label1.Location = new System.Drawing.Point(85, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(753, 31);
+            this.label1.Size = new System.Drawing.Size(602, 31);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Parabéns você chegou no final do nosso quiz aqui estão ";
+            this.label1.Text = "Parabéns você chegou no final do nosso quiz";
             // 
             // label4
             // 
@@ -101,34 +101,47 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // acertos
+            // lbl_acertos
             // 
-            this.acertos.Location = new System.Drawing.Point(337, 212);
-            this.acertos.Name = "acertos";
-            this.acertos.Size = new System.Drawing.Size(100, 20);
-            this.acertos.TabIndex = 15;
+            this.lbl_acertos.AutoSize = true;
+            this.lbl_acertos.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_acertos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_acertos.Location = new System.Drawing.Point(323, 212);
+            this.lbl_acertos.Name = "lbl_acertos";
+            this.lbl_acertos.Size = new System.Drawing.Size(13, 13);
+            this.lbl_acertos.TabIndex = 15;
+            this.lbl_acertos.Text = "0";
             // 
-            // erros
+            // lbl_erros
             // 
-            this.erros.Location = new System.Drawing.Point(337, 256);
-            this.erros.Name = "erros";
-            this.erros.Size = new System.Drawing.Size(100, 20);
-            this.erros.TabIndex = 16;
+            this.lbl_erros.AutoSize = true;
+            this.lbl_erros.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_erros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_erros.Location = new System.Drawing.Point(307, 259);
+            this.lbl_erros.Name = "lbl_erros";
+            this.lbl_erros.Size = new System.Drawing.Size(13, 13);
+            this.lbl_erros.TabIndex = 16;
+            this.lbl_erros.Text = "0";
             // 
             // final
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Tentativa6.Properties.Resources.fundo2;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.erros);
-            this.Controls.Add(this.acertos);
+            this.Controls.Add(this.lbl_erros);
+            this.Controls.Add(this.lbl_acertos);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "final";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "final";
             this.Load += new System.EventHandler(this.final_Load);
             this.ResumeLayout(false);
@@ -143,7 +156,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox acertos;
-        private System.Windows.Forms.TextBox erros;
+        private System.Windows.Forms.Label lbl_acertos;
+        private System.Windows.Forms.Label lbl_erros;
     }
 }
